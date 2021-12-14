@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid yellow; */
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background: var(--very-dark-blue-mainBG);
+    color: var(--soft-blue);
+}
+
+.main{
+    padding-top: 0.1px;
+    background: var(--very-dark-blue-cardBG);    
+    width: 85%;
+    margin: 5vh auto;
+    border-radius: 20px;
+}
+
+.container{
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.main__picture{
+    margin: 1.2rem auto;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.main__img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* .main__picture:hover{
+    background: url(images/image-equilibrium.jpg) rgba(0, 255, 255, 0.3);
+    background-size: cover;
+} */
+
+.main__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--very-dark-blue-line);
+
+}
+
+.main__title{
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main__title:hover{
+    color: var(--cyan);
+}
+
+.main__paragraph{
+    font-weight: 300;
+}
+
+.main__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__price{
+    display: flex;
+    color: var(--cyan);
+    gap: 0.6rem;
+}
+
+.main__eth{
+    width: 13px;
+}
+
+.main__timeleft{
+    display: flex;
+    gap: 0.6rem;
+}
+
+.main__clock{
+    width: 22px;
+}
+
+.credits{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.credits__img{
+    border: white 2px solid;
+    border-radius: 50%;
+    height: 40px;
+    margin: 1rem 0;
+}
+
+.credits__paragraph--white{
+    color: #fff;
+    cursor: pointer;
+}
+
+.credits__paragraph--white:hover{
+    color: var(--cyan);
+}
+
+.attribution{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 430px) {
+    .main{
+        max-width: 500px;
+        margin: 2vh auto;
+    }
+
+    
+}
