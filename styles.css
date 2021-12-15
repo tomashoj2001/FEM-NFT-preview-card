@@ -82,6 +82,7 @@ body{
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .main__title:hover{
