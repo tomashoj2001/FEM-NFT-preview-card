@@ -21,13 +21,16 @@ body{
     background: var(--very-dark-blue-mainBG);
     color: var(--soft-blue);
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .main{
     padding-top: 0.1px;
     background: var(--very-dark-blue-cardBG);    
     width: 85%;
-    margin: auto;
     border-radius: 20px;
 }
 
@@ -38,7 +41,7 @@ body{
 }
 
 .main__picture{
-    margin: 1.2rem auto;
+    margin: 1rem auto;
     border-radius: 10px;
     width: 90%;
     overflow: hidden;
@@ -138,16 +141,18 @@ body{
 
 .attribution{
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 
 @media screen and (min-width: 430px) {
     .main{
-        max-width: 400px;
-        margin: 2vh auto;
+        max-width: 350px;
+        margin: auto;
     }
 
     .main__picture:hover::before{
-        line-height: 400px;
+        line-height: 350px;
     }
 }
