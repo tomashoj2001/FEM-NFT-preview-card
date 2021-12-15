@@ -20,10 +20,10 @@ body{
     font-size: 18px;
     background: var(--very-dark-blue-mainBG);
     color: var(--soft-blue);
+    display: flex;
 }
 
 .main{
-    display: flex;
     padding-top: 0.1px;
     background: var(--very-dark-blue-cardBG);    
     width: 85%;
