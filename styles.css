@@ -23,10 +23,11 @@ body{
 }
 
 .main{
+    display: flex;
     padding-top: 0.1px;
     background: var(--very-dark-blue-cardBG);    
     width: 85%;
-    margin: 5vh auto;
+    margin: auto;
     border-radius: 20px;
 }
 
@@ -142,11 +143,11 @@ body{
 
 @media screen and (min-width: 430px) {
     .main{
-        max-width: 500px;
+        max-width: 400px;
         margin: 2vh auto;
     }
 
     .main__picture:hover::before{
-        line-height: 500px;
+        line-height: 400px;
     }
 }
